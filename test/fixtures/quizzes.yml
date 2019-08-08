@@ -2,15 +2,14 @@
 #
 # Table name: quizzes
 #
-#  id          :bigint           not null, primary key
-#  answer      :string
-#  cover       :string
-#  hint        :text
-#  hint_images :json
-#  point       :integer          default(0)
-#  created_at  :datetime         not null
-#  updated_at  :datetime         not null
-#  level_id    :bigint
+#  id         :bigint           not null, primary key
+#  answer     :string
+#  cover      :string
+#  hint       :text
+#  point      :integer          default(0)
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  level_id   :bigint
 #
 # Indexes
 #
