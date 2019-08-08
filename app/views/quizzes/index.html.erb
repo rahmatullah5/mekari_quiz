@@ -1,7 +1,9 @@
 <div class="container-quiz">
   <div class="col-md-12 col-lg-12">
     <div class="portfolio-item mx-auto">
+      <center>
       <%= image_tag @quiz.cover_url, class: 'img-fluid'%>
+      </center>
       <h3>Arrange this string: <%= @quiz.shuffle_answer %></h3>
       <%= @quiz.hint %>
       <%= form_for(@quiz, url: level_quiz_answer_path(@level, @quiz), method: 'post', html: {class: 'form-signin align-items-center'}) do |f| %>
