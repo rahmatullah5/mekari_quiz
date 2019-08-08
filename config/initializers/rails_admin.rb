@@ -38,4 +38,24 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+
+  config.model 'Level' do
+    edit do
+      field :cover
+      field :title
+      field :description
+      field :quizzes
+    end
+  end
+
+  config.model 'Quiz' do
+    edit do
+      field :cover
+      field :hint_images
+      field :hint
+      field :answer
+      field :level
+      field :point
+    end
+  end
 end
