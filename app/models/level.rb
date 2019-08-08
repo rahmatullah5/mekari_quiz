@@ -12,4 +12,5 @@
 
 class Level < ApplicationRecord
   has_many :quizzes
+  mount_uploader :cover, GeneralImageUploader
 end
