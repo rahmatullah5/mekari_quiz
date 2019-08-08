@@ -46,6 +46,14 @@ RailsAdmin.config do |config|
   end
 
   config.model 'Level' do
+    list do
+      field :cover
+      field :title
+      field :quizzes
+      field :created_at
+      field :updated_at
+    end
+
     show do
       field :cover
       field :title
@@ -65,6 +73,15 @@ RailsAdmin.config do |config|
   end
 
   config.model 'Quiz' do
+    list do
+      field :cover
+      field :answer
+      field :level
+      field :point
+      field :created_at
+      field :updated_at
+    end
+
     show do
       field :cover
       field :hint do
@@ -76,6 +93,7 @@ RailsAdmin.config do |config|
       field :level
       field :point
     end
+
     edit do
       field :cover
       field :hint, :ck_editor
