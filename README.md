@@ -2,11 +2,11 @@
 
 
 * Frontend
-- HTML
-- CSS
-- Bootstrap 4
-- Javascript
-- JQuery
+HTML
+CSS
+Bootstrap 4
+Javascript
+JQuery
 
 * Backend
 - Ruby
