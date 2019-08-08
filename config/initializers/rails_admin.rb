@@ -46,6 +46,16 @@ RailsAdmin.config do |config|
   end
 
   config.model 'Level' do
+    show do
+      field :cover
+      field :title
+      field :description do
+        formatted_value do
+          value.html_safe
+        end
+      end
+      field :quizzes
+    end
     edit do
       field :cover
       field :title
@@ -55,6 +65,17 @@ RailsAdmin.config do |config|
   end
 
   config.model 'Quiz' do
+    show do
+      field :cover
+      field :hint do
+        formatted_value do
+          value.html_safe
+        end
+      end
+      field :answer
+      field :level
+      field :point
+    end
     edit do
       field :cover
       field :hint, :ck_editor
