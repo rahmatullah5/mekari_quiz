@@ -43,7 +43,7 @@ RailsAdmin.config do |config|
     edit do
       field :cover
       field :title
-      field :description
+      field :description, :ck_editor
       field :quizzes
     end
   end
@@ -52,7 +52,7 @@ RailsAdmin.config do |config|
     edit do
       field :cover
       field :hint_images
-      field :hint
+      field :hint, :ck_editor
       field :answer
       field :level
       field :point
