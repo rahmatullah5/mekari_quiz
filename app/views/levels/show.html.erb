@@ -1,19 +1,10 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @level.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @level.description %>
-</p>
-
-<p>
-  <strong>Cover:</strong>
-  <%= @level.cover %>
-</p>
-
-<%= link_to 'Edit', edit_level_path(@level) %> |
-<%= link_to 'Back', levels_path %>
+<div class="container-level">
+  <div class="col-md-12 col-lg-12">
+    <div class="portfolio-item mx-auto">
+      <%= image_tag @level.cover_url, class: 'img-fluid'%>
+      <h3><%= @level.title %></h3>
+      <%= @level.description.html_safe %>
+      <%= link_to 'Start Quiz', level_quizzes_path(@level), class: 'btn btn-lg btn-primary btn-block' %>
+    </div>
+  </div>
+</div>
