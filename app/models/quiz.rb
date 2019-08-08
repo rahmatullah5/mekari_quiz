@@ -25,4 +25,12 @@ class Quiz < ApplicationRecord
   belongs_to :level
   mount_uploaders :hint_images, GeneralImageUploader
   mount_uploader :cover, GeneralImageUploader
+
+  def shuffle_answer
+    answer.split('').shuffle.join.downcase
+  end
+
+  def correct_answer?(answer)
+    answer.eql?(self.answer.downcase)
+  end
 end
