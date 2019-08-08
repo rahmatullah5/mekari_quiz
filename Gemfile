@@ -38,7 +38,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise'
 gem 'rails_admin', '~> 2.0.0.rc'
 gem 'cloudinary'
-gem 'carrierwave', '>= 2.0.0.rc', '< 3.0'
+gem 'carrierwave'
 gem 'mini_magick'
 gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'friendly_id', '~> 5.2.4'
