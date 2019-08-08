@@ -6,7 +6,7 @@
 #  answer      :string
 #  cover       :string
 #  hint        :text
-#  hint_images :string
+#  hint_images :json
 #  point       :integer          default(0)
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
