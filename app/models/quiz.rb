@@ -26,6 +26,8 @@ class Quiz < ApplicationRecord
   mount_uploaders :hint_images, GeneralImageUploader
   mount_uploader :cover, GeneralImageUploader
 
+  validates :answer, :cover, :hint, :point, presence: true
+
   def shuffle_answer
     answer.split('').shuffle.join.downcase
   end
