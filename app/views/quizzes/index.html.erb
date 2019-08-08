@@ -6,7 +6,7 @@
       <%= @quiz.hint %>
       <%= form_for(@quiz, url: level_quiz_answer_path(@level, @quiz), method: 'post', html: {class: 'form-signin align-items-center'}) do |f| %>
       <% if flash[:msg] %>
-      <div class="message"><%= flash[:msg] %></div>
+          <%= answer_alert(flash[:msg]).html_safe %>
       <% end %>
       <p>Current points <%= session[:point].to_i%></p>
       <h1 class="h3 mb-3 font-weight-normal">Your Answer</h1>
