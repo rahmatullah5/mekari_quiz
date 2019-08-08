@@ -23,4 +23,5 @@
 
 class Quiz < ApplicationRecord
   belongs_to :level
+  mount_uploaders :hint_images, GeneralImageUploader
 end
