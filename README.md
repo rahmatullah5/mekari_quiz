@@ -1,24 +1,23 @@
-# README
+# Tech Stack
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+* Frontend:
+HTML,
+CSS,
+Bootstrap 4,
+Javascript,
+JQuery
 
-* Ruby version
+* Backend:
+Ruby,
+Ruby On Rails
 
-* System dependencies
+* Plugins:
+Ckeditor
 
-* Configuration
+* Database:
+Postgresql
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Tools:
+Heroku (Sever Hosting),
+Cloudinary (Asset Management)
