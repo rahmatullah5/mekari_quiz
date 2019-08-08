@@ -1,23 +1,23 @@
 # Tech Stack
 
 
-* Frontend
-HTML
-CSS
-Bootstrap 4
-Javascript
+* Frontend:
+HTML,
+CSS,
+Bootstrap 4,
+Javascript,
 JQuery
 
-* Backend
-- Ruby
-- Ruby On Rails
+* Backend:
+Ruby,
+Ruby On Rails
 
-* Plugins
-- Ckeditor
+* Plugins:
+Ckeditor
 
-* Database
-- Postgresql
+* Database:
+Postgresql
 
-* Tools
-- Heroku (Sever Hosting)
-- Cloudinary (Asset Management)
+* Tools:
+Heroku (Sever Hosting),
+Cloudinary (Asset Management)
