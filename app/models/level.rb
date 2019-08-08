@@ -18,7 +18,8 @@
 class Level < ApplicationRecord
   extend FriendlyId
   friendly_id :title, use: [:slugged, :finders]
-
-  has_many :quizzes
   mount_uploader :cover, GeneralImageUploader
+  has_many :quizzes
+
+  validates :cover, :description, :title, presence: true
 end
