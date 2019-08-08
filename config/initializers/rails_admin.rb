@@ -51,7 +51,6 @@ RailsAdmin.config do |config|
   config.model 'Quiz' do
     edit do
       field :cover
-      field :hint_images
       field :hint, :ck_editor
       field :answer
       field :level
